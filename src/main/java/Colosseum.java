@@ -71,8 +71,14 @@ public class Colosseum {
      *         <p>
      *         Implement this function.
      */
+
     public static Pokemon buildPokemon() {
         Pokemon tempPokemon = new Pokemon();
+        if (tempPokemon.hitPoints < MAX_HIT_POINTS && tempPokemon.hitPoints > 1 && tempPokemon.attackLevel >= 1
+                && tempPokemon.defenseLevel >= 1
+                && (tempPokemon.defenseLevel + tempPokemon.attackLevel) < MAX_HIT_POINTS) {
+
+        }
         return tempPokemon;
     }
 
